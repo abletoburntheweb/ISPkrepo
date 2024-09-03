@@ -1,0 +1,9 @@
+WhatsApp,WhatsApp LLC,True,Обе,5 млрд +
+Garage Band,Apple,True,IOS,1,4 млрд +
+Telegram,Telegram FZ-LLC,True,Обе,1 млрд +
+Вконтакте,VK.com,True,Обе,100 млн +
+Locket,Locket Labs Inc.,True,Обе,10 млн +
+,,False,,
+,,False,,
+,,False,,
+,,False,,

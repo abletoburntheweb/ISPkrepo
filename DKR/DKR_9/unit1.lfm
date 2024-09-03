@@ -1,0 +1,176 @@
+object Fmain: TFmain
+  Left = 665
+  Height = 240
+  Top = 374
+  Width = 741
+  Caption = 'Мобильные приложения'
+  ClientHeight = 240
+  ClientWidth = 741
+  Color = 8454016
+  DesignTimePPI = 120
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '3.4.0.0'
+  object Naimen: TLabel
+    AnchorSideRight.Control = Naimenov
+    AnchorSideBottom.Side = asrBottom
+    Left = 63
+    Height = 20
+    Top = 32
+    Width = 107
+    Anchors = []
+    BorderSpacing.Bottom = 1
+    BorderSpacing.Around = 10
+    Caption = 'Наименование'
+    OnClick = NaimenClick
+  end
+  object Razr: TLabel
+    AnchorSideRight.Control = Razrab
+    AnchorSideBottom.Side = asrBottom
+    Left = 62
+    Height = 20
+    Top = 72
+    Width = 88
+    Anchors = []
+    BorderSpacing.Around = 10
+    Caption = 'Разработчик'
+  end
+  object Zvezd: TLabel
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = LightCheckbox
+    AnchorSideBottom.Control = Plat
+    AnchorSideBottom.Side = asrBottom
+    Left = 48
+    Height = 20
+    Top = 136
+    Width = 108
+    Anchors = []
+    BorderSpacing.Left = 75
+    BorderSpacing.Right = 75
+    BorderSpacing.Bottom = 20
+    BorderSpacing.Around = 10
+    Caption = 'Больше 3 звезд'
+  end
+  object LightCheckbox: TCheckBox
+    AnchorSideLeft.Control = Zvezd
+    AnchorSideTop.Control = Razr
+    AnchorSideTop.Side = asrBottom
+    Left = 224
+    Height = 20
+    Top = 136
+    Width = 21
+    Anchors = []
+    BorderSpacing.Left = 80
+    BorderSpacing.Around = 5
+    TabOrder = 0
+  end
+  object Plat: TLabel
+    AnchorSideBottom.Side = asrBottom
+    Left = 62
+    Height = 20
+    Top = 104
+    Width = 80
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Around = 10
+    Caption = 'Платформа'
+  end
+  object Rate: TLabel
+    AnchorSideRight.Control = Rating
+    AnchorSideBottom.Side = asrBottom
+    Left = 40
+    Height = 20
+    Top = 168
+    Width = 167
+    Anchors = []
+    BorderSpacing.Around = 10
+    Caption = 'Количество скачиваний'
+  end
+  object Nextt: TButton
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 613
+    Height = 28
+    Top = 192
+    Width = 108
+    Anchors = [akRight, akBottom]
+    BorderSpacing.Around = 20
+    Caption = 'Следующее'
+    TabOrder = 1
+    OnClick = NexttClick
+  end
+  object Previouss: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 20
+    Height = 30
+    Top = 190
+    Width = 116
+    Anchors = [akLeft, akBottom]
+    AutoSize = True
+    BorderSpacing.Around = 20
+    Caption = 'Предыдущее'
+    TabOrder = 2
+    OnClick = PrevioussClick
+  end
+  object Naimenov: TEdit
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Razrab
+    Left = 224
+    Height = 28
+    Top = 24
+    Width = 487
+    Anchors = []
+    BorderSpacing.Top = 15
+    BorderSpacing.Around = 5
+    TabOrder = 3
+  end
+  object Razrab: TEdit
+    AnchorSideTop.Control = Naimen
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = LightCheckbox
+    Left = 224
+    Height = 28
+    Top = 64
+    Width = 487
+    Anchors = []
+    BorderSpacing.Around = 5
+    TabOrder = 4
+  end
+  object Rating: TEdit
+    AnchorSideTop.Control = Plat
+    AnchorSideTop.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Nextt
+    Left = 224
+    Height = 28
+    Top = 160
+    Width = 133
+    Anchors = []
+    BorderSpacing.Around = 5
+    TabOrder = 5
+  end
+  object PlatformComboBox: TComboBox
+    Left = 224
+    Height = 28
+    Top = 104
+    Width = 133
+    ItemHeight = 20
+    ItemIndex = 0
+    Items.Strings = (
+      'Android'
+      'IOS'
+      'Обе'
+    )
+    TabOrder = 6
+    Text = 'Android'
+  end
+end
